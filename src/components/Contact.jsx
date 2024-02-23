@@ -129,7 +129,7 @@ export default function Contact() {
             type='submit'
             value='Send'
             className='w-2/3 rounded-full bg-black text-white'
-            onClick={openModal}
+            // onClick={openModal}
           >
             Send message
           </button>
