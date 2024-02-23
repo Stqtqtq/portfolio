@@ -58,7 +58,7 @@ export default function About() {
         </div>
         <div className='col-span-1 mx-auto self-center justify-self-center 2xl:w-3/4'>
           <img
-            src='src/assets/TQ-polaroid.png' // Make sure this path is correct
+            src='./images/TQ-polaroid.png' // Make sure this path is correct
             alt='Media Featured'
             className='h-full w-full object-contain'
           />
