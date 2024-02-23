@@ -53,7 +53,7 @@ export default function Projects() {
       </div>
       <div className='h-[12rem] w-full lg:ml-auto lg:h-[20rem] lg:w-2/3 2xl:h-[30rem] '>
         <img
-          src='src/assets/fyp-exp.jpg'
+          src='./images/fyp-exp.jpg'
           alt='FYP Project'
           className='h-full w-full object-cover'
         />
@@ -94,7 +94,7 @@ export default function Projects() {
       </div>
       <div className='mx-auto h-[12rem] w-full lg:h-[20rem] lg:w-2/3 2xl:h-[30rem]'>
         <img
-          src='src/assets/TQ-SAF1.jpg'
+          src='./images/TQ-SAF1.jpg'
           alt='Media Featured'
           className='h-full w-full object-cover'
         />

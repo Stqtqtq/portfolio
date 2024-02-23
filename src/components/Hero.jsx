@@ -31,7 +31,7 @@ export default function Hero() {
     <section
       id='hero'
       className='flex h-screen select-none flex-col items-center justify-center bg-contain bg-center bg-no-repeat'
-      style={{ backgroundImage: 'url(src/assets/rainbow-splatter-70.png)' }}
+      style={{ backgroundImage: 'url(./images/rainbow-splatter-70.png)' }}
     >
       <h1 className='font-BebasNeue text-[#100C08] lg:text-[7rem] 2xl:text-[8rem]'>
         Hello! Call me <span className='text-orange-600 '>TQ</span>.
