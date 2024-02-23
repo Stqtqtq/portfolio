@@ -7,7 +7,7 @@ export default function About() {
         </h1>
         <div
           className='mx-auto h-96 w-96 bg-contain bg-no-repeat lg:h-[44rem] lg:w-[44rem]'
-          style={{ backgroundImage: 'url(src/assets/TQ-polaroid.png)' }}
+          style={{ backgroundImage: 'url(./images/TQ-polaroid.png)' }}
         ></div>
         <p className='mx-auto mt-8 w-2/3 font-Gudea text-sm leading-6 lg:text-xl'>
           Graduated from Nanyang Technological University (NTU) in 2023 with a
@@ -58,7 +58,7 @@ export default function About() {
         </div>
         <div className='col-span-1 mx-auto self-center justify-self-center 2xl:w-3/4'>
           <img
-            src='./images/TQ-polaroid.png' // Make sure this path is correct
+            src='./images/TQ-polaroid.png'
             alt='Media Featured'
             className='h-full w-full object-contain'
           />
