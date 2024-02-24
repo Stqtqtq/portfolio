@@ -25,7 +25,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <section className='sticky top-4 z-10 flex select-none justify-center'>
+    <section className='z-1 fixed top-4 flex w-full select-none justify-center'>
       <div className='w-[75%] rounded-2xl bg-white p-3 shadow-md shadow-slate-400/50 lg:w-[35%] xl:w-[25%] 2xl:w-[21%]'>
         <ul className='flex justify-center divide-x divide-black font-BebasNeue'>
           <li>
