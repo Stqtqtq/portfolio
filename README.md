@@ -1,6 +1,7 @@
-# portfolio
+# Personal Portfolio
 
-1. Created using react framework and Vite build tool
-2. Tailwind CSS/Flowbite
+## Ver. changes
 
-* settings: git config --global core.autocrlf true
+Ver. 1.0.0 -> Ver. 1.0.1
+
+- Changed each project into 'Cards'

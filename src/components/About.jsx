@@ -30,6 +30,7 @@ export default function About() {
           need.
         </p>
       </div>
+
       <div className='hidden h-full grid-cols-2 lg:grid'>
         <div className='col-span-1 w-4/5 self-center justify-self-end text-black'>
           <h1 className='font-BebasNeue 2xl:text-6xl'>
