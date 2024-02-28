@@ -2,19 +2,15 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import config from '../config';
 import Modal from './Modal';
 
 export default function Contact() {
   let [isOpen, setIsOpen] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
   }
 
   const form = useRef();
@@ -22,10 +18,17 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    setIsSending(true);
+
     emailjs
-      .sendForm(config.serviceId, config.templateId, form.current, {
-        publicKey: config.publicKey,
-      })
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        },
+      )
       .then(
         () => {
           console.log('SUCCESS!');
@@ -38,7 +41,10 @@ export default function Contact() {
           setIsSuccess(false);
           setIsOpen(true);
         },
-      );
+      )
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   return (
@@ -129,9 +135,10 @@ export default function Contact() {
             type='submit'
             value='Send'
             className='w-2/3 rounded-full bg-black text-white'
+            disabled={isSending}
             // onClick={openModal}
           >
-            Send message
+            {isSending ? <span>Sending...</span> : <span>Send message</span>}
           </button>
         </form>
         <Modal isOpen={isOpen} closeModal={closeModal} isSuccess={isSuccess} />
