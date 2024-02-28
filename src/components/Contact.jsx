@@ -144,7 +144,7 @@ export default function Contact() {
         <Modal isOpen={isOpen} closeModal={closeModal} isSuccess={isSuccess} />
       </div>
       <footer className='absoulte bottom-0 z-10 mt-10 w-full text-center font-BebasNeue text-sm text-black 2xl:text-xl'>
-        &copy; 2024, Ver 1.0.0
+        &copy; 2024, Ver 1.0.1
       </footer>
     </section>
   );
